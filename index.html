@@ -9,26 +9,12 @@
 <title>Bootstrap 3 Responsive Layout Example</title>
 <!--inisialisasi file css yang berasal dari framework bootstrap-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="bootstrap/dist/css/styles.css">
 <!--inisialisasi file jquery dari repositor yang ada di googleapis.com-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<style type="text/css">
-	
-	img{
-		height: 100px;
-		width: 100px;
-        
-	}
-
-    .lebar{
-        text-align: center;
-        background-color: #fff;
-        width: 300px;
-        height:150px;
-        margin: 5px 5px 5px 5px;
-    }
-</style>
 
 </head>
 <body>
@@ -79,58 +65,13 @@
 		</table>
     </div>
     <h2>My Skill</h2>
-    <!--sebagai wadah yang memiliki warna tersendiri yang digunakan untuk membedakan setiap konten pada website-->
-    <div class="row jumbotron mrg">
-        <div id="help">
-        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
-        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Web : UI/UX Designer</h4>
-            <img src="images/uiUx.png">
-        </div>
-        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
-        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Web : Back-End Progammer</h4>
-            <img src="images/backEnd.png">
-        </div>
-        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
-        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Mobile : UI/UX Designer</h4>
-            <img src="images/uiUx.png">
-        </div>
-        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
-        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Mobile : Back-End Progammer</h4>
-            <img src="images/backEnd.png">
-        </div>
-        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
-        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Desktop : Front-End Programmer</h4>
-            <img src="images/frontEnd.png">
-        </div>
-        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
-        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Desktop : Back-End Progammer</h4>
-            <img src="images/backEnd.png">
-        </div>
-        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
-        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Network Administrator</h4>
-            <img src="images/admin.jpg">
-        </div>
-        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
-        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Wireless Network</h4>
-            <img src="images/wireless.png">
-        </div>
-        </div>
+    <!--mengisi tag dengan id foto dengan isi dari file foto.html-->
+    <div id="foto"  class="row jumbotron mrg">
+        <script type='text/javascript'>
+            $(document).ready(function(){
+                $( "#foto" ).load( "foto.html" );
+            });
+        </script>
     </div>
     <hr>
     <div class="row">

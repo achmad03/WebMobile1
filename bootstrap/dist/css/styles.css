@@ -1,0 +1,28 @@
+img{
+    height: 100px;
+    width: 100px;
+    
+}
+
+/*nilai default yang digunakan pada class lebar*/
+.lebar{
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    height:200px;
+    margin: 5px 5px 5px 5px;
+}
+/*media query yang digunakan saat minimal lebar pada layar adalah 768px*/
+@media (min-width: 768px) {
+    /*mengubah gambar pada website agar berisi 2 gambar secara vertikal*/
+    .lebar{
+        width: 48%;
+    }
+}
+/*media query yang digunakan saat minimal lebar pada layar adalah 1000px*/
+@media (min-width: 1000px) {
+    .lebar{
+        /*mengubah gambar pada website agar berisi 3 gambar secara vertikal*/
+        width: 32%;
+    }
+}

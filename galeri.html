@@ -6,26 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bootstrap 3 Responsive Layout Example</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/dist/css/styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<style type="text/css">
-	/*style untuk tag img yang digunakan dalam file galeri.html*/
-	img{
-		height: 100px;
-		width: 100px;
-        max-width: 100%;
-        
-	}
-    /*style untuk class lebar yang digunakan untuk membuat contauner dari gambar dan judul gambar*/
-    .lebar{
-        text-align: center;
-        background-color: #fff;
-        width: 300px;
-        height:150px;
-        margin: 5px 5px 5px 5px;
-    }
-</style>
 
 </head>
 <body>
@@ -53,91 +37,14 @@
 </nav>
 <div class="container">
     
-    <div class="row jumbotron">
+    <div id="foto" class="row jumbotron">
         <h2>My Gallery</h2>
-        
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Web : UI/UX Designer</h4>
-            <!--tag picture digunakan untuk memanggil gambar seperti tag img, namun dengan tag picture bisa dilakukan media query
-            secara langsung pada tag html yang dituliskan lalu menambahkan srcset dengan file yang akan dituju -->
-            <picture>
-                    <source media="(min-width: 1000px)"
-                    srcset="images/uiUxbesar.png" />
-                    <source media="(min-width: 800px)"
-                    srcset="images/uiUxsedang.png" />
-                    <img src="images/uiUx.png">
-            </picture>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Web : Back-End Progammer</h4>
-            <picture>
-                    <source media="(min-width: 1000px)"
-                    srcset="images/backEndbesar.png" />
-                    <source media="(min-width: 800px)"
-                    srcset="images/backEndsedang.png" />
-                    <img src="images/backEnd.png">
-            </picture>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Mobile : UI/UX Designer</h4>
-            <picture>
-                    <source media="(min-width: 1000px)"
-                    srcset="images/uiUxbesar.png" />
-                    <source media="(min-width: 800px)"
-                    srcset="images/uiUxsedang.png" />
-                    <img src="images/uiUx.png">
-            </picture>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Mobile : Back-End Progammer</h4>
-            <picture>
-                    <source media="(min-width: 1000px)"
-                    srcset="images/backEndbesar.png" />
-                    <source media="(min-width: 800px)"
-                    srcset="images/backEndsedang.png" />
-                    <img src="images/backEnd.png">
-            </picture>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Desktop : Front-End Programmer</h4>
-            <picture>
-                    <source media="(min-width: 1000px)"
-                    srcset="images/frontEndbesar.png" />
-                    <source media="(min-width: 800px)"
-                    srcset="images/frontEndsedang.png" />
-                    <img src="images/frontEnd.png">
-            </picture>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Desktop : Back-End Progammer</h4>
-            <picture>
-                    <source media="(min-width: 1000px)"
-                    srcset="images/backEndbesar.png" />
-                    <source media="(min-width: 800px)"
-                    srcset="images/backEndsedang.png" />
-                    <img src="images/backEnd.png">
-            </picture>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Network Administrator</h4>
-            <picture>
-                    <source media="(min-width: 1000px)"
-                    srcset="images/adminbesar.jpg" />
-                    <source media="(min-width: 800px)"
-                    srcset="images/adminsedang.jpg" />
-                    <img src="images/admin.jpg">
-            </picture>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 lebar">
-            <h4>Wireless Network</h4>
-            <picture>
-                    <source media="(min-width: 1000px)"
-                    srcset="images/wirelessbesar.png" />
-                    <source media="(min-width: 800px)"
-                    srcset="images/wirelesssedang.png" />
-                    <img src="images/wireless.png">
-            </picture>
-        </div>
+        <!--mengisi tag dengan id foto dengan isi dari file foto.html-->
+        <script type='text/javascript'>
+            $(document).ready(function(){
+                $( "#foto" ).load( "foto.html" );
+            });
+        </script>
     </div>
     <hr>
     <div class="row">
