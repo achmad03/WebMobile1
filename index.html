@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--digunakan untuk mmebuat browser bisa membaca ukuran lebar dari layar yang digunakan-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bootstrap 3 Responsive Layout Example</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -32,17 +33,24 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container">
         <div class="navbar-header">
+            <!--digunakan untuk membuat event pada navbar dengan icon bila ukuran layar lebar min 768px maka menampilkan 
+            menu pada class nav yang ada di bawah class ini namun bila lebar kurangdari 768px maka pada navigasi akan pindah ke
+            bagian class icon-bar
+            media query yang digunakan terdapat pada file bootstrapt.css-->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
+            <!--header yang digunakan pada website-->
             <a class="navbar-brand" href="#">My Project</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="nav navbar-nav">
+                <!--class active akan menampilkan style yang berbeda dengan navigasi menu lainnya.-->
                 <li class="active"><a href="index.html">Biografi</a></li>
                 <li><a href="galeri.html">Galeri</a></li>
                 <li><a href="#">Kosong</a></li>
@@ -66,6 +74,8 @@
     </div>
     <h2>My Skill</h2>
     <div class="row jumbotron">
+        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
+        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
         <div class="col-sm-6 col-md-4 col-lg-2 lebar">
             <h4>Web : UI/UX Designer</h4>
             <img src="images/uiUx.png">
