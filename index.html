@@ -5,8 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!--digunakan untuk mmebuat browser bisa membaca ukuran lebar dari layar yang digunakan-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--menampilkan title dari website-->
 <title>Bootstrap 3 Responsive Layout Example</title>
+<!--inisialisasi file css yang berasal dari framework bootstrap-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--inisialisasi file jquery dari repositor yang ada di googleapis.com-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -30,7 +33,7 @@
 </head>
 <body>
 <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- menampilkan bentuk menu pada mobile device -->
     <div class="container">
         <div class="navbar-header">
             <!--digunakan untuk membuat event pada navbar dengan icon bila ukuran layar lebar min 768px maka menampilkan 
@@ -47,7 +50,7 @@
             <!--header yang digunakan pada website-->
             <a class="navbar-brand" href="#">My Project</a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- link yang akan digunakan pada navigasi website -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="nav navbar-nav">
                 <!--class active akan menampilkan style yang berbeda dengan navigasi menu lainnya.-->
@@ -58,11 +61,14 @@
         </div>
     </div>
 </nav>
-<div class="container">
+<!--wadah untuk konten yang ada pada website pemberian margin dibuat % agar bisa menyesuaikan saat ukuran layar berubah-->
+<div class="container" style="margin-top:5%;">
+    <!--sebagai wadah yang memiliki warna tersendiri yang digunakan untuk membedakan setiap konten pada website-->
     <div class="jumbotron">
         <h2>My Bio</h2>
         <table><tr><td>Name</td><td> : </td><td>Achmad Syarif Abdullah</td></tr><tr><td>Address</td><td> : </td><td>Gesikan 3 Wijirejo Pandak Bantul Yogyakarta</td></tr><tr><td>Phone Number</td><td> : </td><td>089736437382</td></tr></table>
     </div>
+    <!--sebagai wadah yang memiliki warna tersendiri yang digunakan untuk membedakan setiap konten pada website-->
     <div class="jumbotron">
         <h2>My Study Bio</h2>
         <table>
@@ -73,40 +79,57 @@
 		</table>
     </div>
     <h2>My Skill</h2>
-    <div class="row jumbotron">
+    <!--sebagai wadah yang memiliki warna tersendiri yang digunakan untuk membedakan setiap konten pada website-->
+    <div class="row jumbotron mrg">
+        <div id="help">
         <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
         col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
         <div class="col-sm-6 col-md-4 col-lg-2 lebar">
             <h4>Web : UI/UX Designer</h4>
             <img src="images/uiUx.png">
         </div>
+        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
+        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
         <div class="col-sm-6 col-md-4 col-lg-2 lebar">
             <h4>Web : Back-End Progammer</h4>
             <img src="images/backEnd.png">
         </div>
+        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
+        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
         <div class="col-sm-6 col-md-4 col-lg-2 lebar">
             <h4>Mobile : UI/UX Designer</h4>
             <img src="images/uiUx.png">
         </div>
+        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
+        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
         <div class="col-sm-6 col-md-4 col-lg-2 lebar">
             <h4>Mobile : Back-End Progammer</h4>
             <img src="images/backEnd.png">
         </div>
+        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
+        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
         <div class="col-sm-6 col-md-4 col-lg-2 lebar">
             <h4>Desktop : Front-End Programmer</h4>
             <img src="images/frontEnd.png">
         </div>
+        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
+        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
         <div class="col-sm-6 col-md-4 col-lg-2 lebar">
             <h4>Desktop : Back-End Progammer</h4>
             <img src="images/backEnd.png">
         </div>
+        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
+        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
         <div class="col-sm-6 col-md-4 col-lg-2 lebar">
             <h4>Network Administrator</h4>
             <img src="images/admin.jpg">
         </div>
+        <!--pada class dibawah ini akan mengatur besar prosentase layar yang digunakan pada col-sm-6 : 50%
+        col-md-4 : 33%, dan col-lg-2 : 16.66667%-->
         <div class="col-sm-6 col-md-4 col-lg-2 lebar">
             <h4>Wireless Network</h4>
             <img src="images/wireless.png">
+        </div>
         </div>
     </div>
     <hr>
@@ -118,5 +141,21 @@
         </div>
     </div>
 </div>
+<script>
+    if (!('serviceWorker' in navigator)) {
+        //ditampilkan bila serviceWOrker tidak didukung oleh browser
+        console.log('Service worker not supported');
+        //return;
+    }
+    navigator.serviceWorker.register('achsya-sw.js')
+      .then(function(registration) {
+        //akan muncul bila serviceworker berhasil dikerjakan dan akan menampilkan scope saat membuka file index.html
+        console.log('Registered at scope:', registration.scope);
+      })
+      .catch(function(error) {
+        //akan muncul bila terjadi error pada registrasi
+        console.log('Registration failed:', error);
+      });
+</script>
 </body>
 </html>                            
