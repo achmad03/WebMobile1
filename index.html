@@ -6,14 +6,14 @@
 <!--digunakan untuk mmebuat browser bisa membaca ukuran lebar dari layar yang digunakan-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--menampilkan title dari website-->
-<title>Bootstrap 3 Responsive Layout Example</title>
+<title>Biografi</title>
 <!--inisialisasi file css yang berasal dari framework bootstrap-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.new.css">
 
-<link rel="stylesheet" href="bootstrap/dist/css/styles.css">
+<link rel="stylesheet" href="bootstrap/css/styles.css">
 <!--inisialisasi file jquery dari repositor yang ada di googleapis.com-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -83,20 +83,15 @@
     </div>
 </div>
 <script>
-    if (!('serviceWorker' in navigator)) {
-        //ditampilkan bila serviceWOrker tidak didukung oleh browser
-        console.log('Service worker not supported');
-        //return;
-    }
-    navigator.serviceWorker.register('achsya-sw.js')
+      if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('achsya-sw.js')
       .then(function(registration) {
-        //akan muncul bila serviceworker berhasil dikerjakan dan akan menampilkan scope saat membuka file index.html
-        console.log('Registered at scope:', registration.scope);
+      console.log('Registered:', registration);
       })
       .catch(function(error) {
-        //akan muncul bila terjadi error pada registrasi
-        console.log('Registration failed:', error);
+      console.log('Registration failed: ', error);
       });
+    }
 </script>
 </body>
 </html>                            
