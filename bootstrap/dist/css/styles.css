@@ -3,6 +3,9 @@ img{
     width: 100px;
     
 }
+#foto{
+    margin-top:5%;
+}
 
 /*nilai default yang digunakan pada class lebar*/
 .lebar{
